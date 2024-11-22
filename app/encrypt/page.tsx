@@ -60,8 +60,8 @@ export default function EncryptPage() {
 
     setIsLoading(true);
     try {
-      const { verified } = await verifyMessage(algorithm, message, signature);
-      setVerificationResult(verified ? "Signature is valid" : "Signature is invalid");
+      const { isValid } = await verifyMessage(algorithm, message, signature);
+      setVerificationResult(isValid ? "Signature is valid" : "Signature is invalid");
       toast.success("Verification result received!");
     } catch (error: any) {
       toast.error(error.response?.data?.detail || "An error occurred during verification");

@@ -18,7 +18,7 @@ export const signMessage = async (algorithm: string, message: string) => {
 };
 
 export const verifyMessage = async (algorithm: string, message: string, signature: string) => {
-  const response = await api.post(`/${algorithm}/verify`, { message, signature });
+  const response = await api.post(`/${algorithm}/verify_signature`, { message, signature });
   return response.data;
 };
 
