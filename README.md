@@ -4,9 +4,7 @@
 
 The Encryption/Decryption Application is a modern web application built with Next.js for the client side and the backend for the business logic that provides secure message encryption, digital signatures, and X.509 certificate management. It supports multiple encryption algorithms including RSA and ElGamal.
 
-![Home Page](https://images.unsplash.com/photo-1633265486064-086b219458ec?w=800&auto=format&fit=crop&q=60)
-
-# Implementation of RSA and ElGamal Algorithms
+![Home Page](https://cloudkul.com/blog/wp-content/uploads/2024/04/symmetric-cryptography.png)
 
 ---
 
@@ -35,11 +33,7 @@ The Encryption/Decryption Application is a modern web application built with Nex
     - [Generating a Certificate](#3-generating-a-certificate)
     - [Decrypting a Message](#4-decrypting-a-message)
     - [Verifying a Signature](#5-verifying-a-signature)
-5. [Business Logic](#business-logic)
-    - [Encryption Flow](#encryption-flow)
-    - [Signature Flow](#signature-flow)
-    - [Certificate Generation](#certificate-generation)
-6. [Conclusion](#conclusion)
+5. [Conclusion](#conclusion)
 
 ---
 
@@ -47,6 +41,9 @@ The Encryption/Decryption Application is a modern web application built with Nex
 
 ### 1. Home Page
 The home page serves as the starting point for users, providing an overview of the application's purpose and functionalities.
+
+![screencapture-localhost-3000-2024-11-24-14_39_36](https://github.com/user-attachments/assets/74297dba-5dd4-43df-8f9d-a48e011be82b)
+
 
 **Main Content:**
 - **Encrypt Section**
@@ -63,6 +60,9 @@ The home page serves as the starting point for users, providing an overview of t
 ### 2. Encryption Page
 This page facilitates message encryption using algorithms such as RSA and ElGamal.
 
+![screencapture-localhost-3000-encrypt-2024-11-24-14_38_55](https://github.com/user-attachments/assets/6e7fcb95-aeac-4ace-ac5c-1e0a720cd4fe)
+
+
 **User Interface:**
 - A seamless experience for selecting encryption algorithms, inputting messages, and generating encrypted outputs.
 
@@ -70,6 +70,9 @@ This page facilitates message encryption using algorithms such as RSA and ElGama
 
 ### 3. Decryption Page
 This page handles message decryption and signature verification.
+
+![screencapture-localhost-3000-decrypt-2024-11-24-14_40_11](https://github.com/user-attachments/assets/6d72e880-7107-471b-8ad5-068290735f3d)
+
 
 **User Interface:**
 - Allows users to decrypt messages and verify digital signatures effectively.
@@ -103,43 +106,45 @@ Details regarding the implementation and integration of the encryption API.
 ## Usage Guide
 
 ### 1. Encrypting a Message
+
+![screencapture-localhost-3000-encrypt-2024-11-24-15_11_14](https://github.com/user-attachments/assets/012bec39-9726-4c81-91bc-57f4b6556838)
+
 - Select the encryption algorithm (RSA/ElGamal).
 - Enter the message.
 - Click "Encrypt Message."
 - Copy the Base64 encoded output.
 
 ### 2. Creating a Digital Signature
+
+![screencapture-localhost-3000-encrypt-2024-11-24-15_12_01](https://github.com/user-attachments/assets/f39601ae-976f-47a5-8751-48f987836741)
+
 - Enter the message to sign.
 - Click "Sign Message."
 - Save the generated signature.
 
 ### 3. Generating a Certificate
+
+![screencapture-localhost-3000-encrypt-2024-11-24-15_13_16](https://github.com/user-attachments/assets/d09787b4-a919-4c98-8401-830ce9104fb1)
+
 - Fill in the certificate details.
 - Click "Generate Certificate."
 - Download the X.509 certificate.
 
 ### 4. Decrypting a Message
+
+![screencapture-localhost-3000-decrypt-2024-11-24-15_16_34](https://github.com/user-attachments/assets/e41248b2-9020-41cb-bea8-dc71251cafc9)
+
 - Select the encryption algorithm (RSA/ElGamal).
 - Enter the encrypted message.
 - Click "Decrypt Message."
 
 ### 5. Verifying a Signature
+
+![screencapture-localhost-3000-decrypt-2024-11-24-15_19_06](https://github.com/user-attachments/assets/7036822a-7992-468f-8e5c-a836c4cb8e53)
+
 - Select the encryption algorithm (RSA/ElGamal).
 - Enter the original message.
 - Enter the digital signature.
-
----
-
-## Business Logic
-
-### Encryption Flow
-Details of the encryption process.
-
-### Signature Flow
-Details of the signature creation and verification process.
-
-### Certificate Generation
-Steps for generating X.509 certificates.
 
 ---
 
