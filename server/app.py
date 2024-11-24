@@ -45,8 +45,8 @@ class CertificateRequest(BaseModel):
 # === RSA Implementation with Block Encryption ===
 class RSA:
     def __init__(self):
-        self.p = number.getPrime(512)  # Large prime number
-        self.q = number.getPrime(512)  # Large prime number
+        self.p = number.getPrime(257)  # Large prime number
+        self.q = number.getPrime(263)  # Large prime number
         self.n = self.p * self.q  # Modulus
         self.phi = (self.p - 1) * (self.q - 1)
         self.e = self._generate_e()
